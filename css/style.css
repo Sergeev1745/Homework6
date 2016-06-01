@@ -6,6 +6,13 @@ body {
 	font-family: Arial;
 
 }
+@font-face {
+    font-family: 'lucida_s_u';
+    src: url('../fonts/lucida_sans_unicode_regular-webfont.woff2') format('woff2'),
+         url('../fonts/lucida_sans_unicode_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .wrapper{
 	width: 910px;
 	min-height: 1064px;
@@ -21,7 +28,7 @@ body {
 
 .phone {
 	float: left;
-	margin:0 15px 0 7px;
+	margin:0 20px 0 7px;
 	vertical-align: center;
 }
 .phone-img{
@@ -30,37 +37,49 @@ body {
 	height: 20px;
 	background: url(../img/phone.png) 50% 50% no-repeat, linear-gradient(to top, #1f6786, #0c3357); 
 	border-radius: 100px;
-	text-align: center;  
+	text-align: center;
+	margin-top:5px; 
+	float:left; 
 
 }
 .phone span{
 	font-size: 18px;
+	display:block;
 	color: #5e696d;
+	margin:4px 0 0 26px;
+	word-spacing:7px;
 }
 .log-in{
 	float: left;
-	width: 475px;
-	height: 23px;
-	padding: 2px 10px;
-	border-radius: 5px;
-	background: url(../img/autor.png) 6px 3px no-repeat, linear-gradient(to top, #0c3357, #1f6686);
+	width: 485px;
+	height: 22px;
+	padding: 2px 0 2px 11px;
+	border-radius: 4px;
+	background: url(../img/autor.png) 8px 5px no-repeat, linear-gradient(to top, #0c3357, #1f6686);
 	box-shadow: 2px 2px 2px 0px rgba(150, 150, 150, 0.75);
 }
 .log-in input{
-	width: 112px;
+	width: 109px;
 	height: 16px;
-	border-radius: 2px;
+	border-radius: 1px;
 	font-size: 11px;
 	color: #97a2a6;
+	padding-left:5px;	
+	border:0;
+	
+}
+.log-in input:nth-child(2){
+	margin-left:4px;
+
 }
 .log-in form{
 	margin-left: 14px;
 	display: inline-block;
 }
 #enter {
-	
-	width: 30px;
-	height: 12px;
+	padding-left:0px;
+	width: 35px;
+	line-height:10px;
 	color: #fff;
 	font-size: 11px;
 	background: 0;
@@ -74,30 +93,39 @@ body {
 	text-decoration: none;
 }
 .log-in a:last-child{
-	font-size: 11px;
+	font-size: 11.5px;	
 	color: #bfbfbf;
 	text-decoration: underline;
 	margin-left: 20px;
+	font-family:'lucida_s_u';
 }
+
 .navi{
 	float: left;
-	width: 75px;
-	height: 20px;
-	margin-left: 17px;
+	width: 69px;
+	height: 19px;
+	margin:1px 0 0 17px;
+	padding-left:6px;	
 	border: 1px solid #bdc4c7;
 	border-radius: 100px;
-	text-align: center;
+	text-align: left;
 	box-shadow: 1px 1px 1px 0px rgba(150, 150, 150, 0.75);
 }
+.navi a{
+	display:inline-block;
+	margin:0 2px;
+	
+}
+
 .slider{
 	width: 909px;
 	height: 237px;
-	margin-top: 10px;
+	margin-top: 11px;
 	background: url(../img/baner.jpg);
 }
 .navbar{
 	height: 35px;
-	margin-top: 10px;
+	margin-top: 6px;
 	padding: 0;
 	background: linear-gradient(to bottom,  rgba(87,96,104,1) 0%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
 	border-radius: 5px;
@@ -105,15 +133,29 @@ body {
 }
 .menu{
 	float: left;
-	margin-left: 125px;
+	margin-left: 132px;
 
 }
 .menu a{
-	padding: 5px 18px;
+	padding: 5px 13px;
+	margin-left:2px;
 	color: #b1bcc0;
 	text-decoration: none;
+	font-family: 'lucida_s_u';
 	font-size: 14px;
 	line-height: 35px;
+}
+.menu a:nth-child(3){
+	
+	padding: 5px 10px;
+}
+.menu a:nth-child(4){
+	
+	padding: 5px 10px;
+}
+.menu a:nth-child(5){
+	
+	padding: 5px 10px;
 }
 .menu a:hover{
 	color:#fff;
@@ -121,14 +163,15 @@ body {
 	border-radius: 15px;
 }
 .card{
-	padding-left: 25px;
-	margin-top: 5px;
-	width: 190px;
+	padding-left: 20px;
+	margin-top: 3px;
+	width: 210px;
 	height: 25px;
 	float: right;
-	background: url(../img/koshik.png) 0px 3px no-repeat;
+	background: url(../img/koshik.png) 2px 5px no-repeat;
 }
 .card p{
+	padding-left:12px;
 	display: inline;
 	color: #929b9f;
 	line-height: 25px;
@@ -141,12 +184,13 @@ body {
 
 }
 .search-block1{
-	width: 414px;
+	padding:0;
+	width: 412px;
 	height: 132px;
-	margin: 10px 15px 0 0;
+	margin: 10px 15px 0 5px;
 	float: left;
 	border: 1px solid #b0b0b1;
-	border-radius: 20px;
+	border-radius: 15px;
 	text-align: center;
 	position: relative;
 	box-shadow: 2px 2px 5px 2px rgba(150, 150, 150, 0.75);
@@ -158,7 +202,7 @@ body {
 }
 .search-block1 >span:nth-child(2){
 	font-size: 12px;
-	padding: 2px 65px 2px 70px;
+	padding: 2px 75px 2px 60px;
 
 }
 .primary-colum{
@@ -170,7 +214,7 @@ body {
 .l-row{
 	position:relative;
 	height: 18px;
-	margin-bottom: 2px;
+	margin-bottom: 4px;
 	padding: 0 15px;
 	text-align: left;
 	
@@ -194,11 +238,11 @@ body {
 }
 .primary-colum select{
 	width: 100px;
-	margin-left: 80px;
+	margin-left: 78px;
 }
 .select-style select{
 	-webkit-appearance:none;	
-	height: 16px;
+	height: 18px;
 	border: 0;
 	box-shadow: 4px 4px 4px -4px #5c5c5c inset;
 	background: url(../img/drop.png) 100% 50% no-repeat;
@@ -209,7 +253,7 @@ body {
 }
 .search-button{
 	position: absolute;
-	right: 16px;
+	right: 18px;
 	bottom: 8px;
 	background: 0;
 	border: 0;
@@ -224,13 +268,14 @@ body {
 /*2-th search block*/
 .search-block2{
 	width: 190px;
-	height: 132px;
+	height: 134px;
 	margin: 10px 10px 0 0;
 	float: left;
 	border: 1px solid #b0b0b1;
 	border-radius: 20px;
 	text-align: left;
 	position: relative;
+
 	box-shadow: 2px 2px 5px 2px rgba(150, 150, 150, 0.75);
 }
 .search-block2 >span{
@@ -256,7 +301,9 @@ body {
 	left: 45px;
 }
 .cc-row select{	
-	width: 48px;
+	width: 50px;
+	margin-left:3px;
+	
 	
 }
 .cc-select{
@@ -268,6 +315,7 @@ body {
 }
 .cc-checkbox{
 	position:relative;
+	margin-top:10px;
 	text-align: left;
 	font-size: 10px;
 	color: #000;
@@ -281,12 +329,20 @@ body {
 }
 .cc-checkbox input{
 	-webkit-appearance:none;
-	margin:0 0 2px 57px;
+	margin:0 3px 2px 57px;
 	height: 10px;
 	width: 10px;
 	border: 0;
 	box-shadow: 4px 4px 4px -4px #5c5c5c inset;
 	outline: 0;
+
+}
+.cc-row2{
+	margin-top:7px;
+}
+.cc-checkbox label{
+	font-family:'lucida_s_u';
+	font-size:11px;
 
 }
 .cc-checkbox input:checked{
@@ -298,7 +354,7 @@ body {
 
 .search-block3{
 	width: 266px;
-	height: 132px;
+	height: 133px;
 	margin-top: 10px;
 	float: left;
 	border: 1px solid #b0b0b1;
@@ -345,10 +401,13 @@ body {
 #qty{
 	width: 50px;
 }
+.r3-row{
+	margin-top:4px;
+}
 .r2-colum{
 	float: left;
 	width: 65px;
-	margin:3px 0 0 12px;
+	margin:2px 0 0 12px;
 	padding-left: 10px;
 	text-align: left;
 	border-left: 1px solid #bdc6ca;
@@ -363,7 +422,6 @@ body {
 	color: #77858b;
 	font-size: 8px;
 
-
 }
 .r2-colum select{
 	width: 58px;
@@ -375,16 +433,20 @@ body {
 .left-sidebar{
 	float: left;
 	width: 182px;
-	margin-right: 7px;
+	margin-right: 9px;
+}
+aside{
+	font-family:'lucida_s_u';
 }
 aside h1{
 	width: 152px;
 	padding-left: 28px;
-	margin-bottom: 12px;
-	font-size: 13px;
+	margin:3px 0 12px 0;
+	font-size: 12px;
 	color: #114165;
 	line-height: 25px;
-	background: url(../img/copy.png) 3px 50% no-repeat;
+	background: url(../img/copy.png) 2px 1px no-repeat;
+	background-size:21.5px;
 	border: 1px solid #949fa4;
 	border-radius: 50px;
 	box-shadow: 1px 1px 5px 1px rgba(150, 150, 150, 0.5);
@@ -392,25 +454,36 @@ aside h1{
 aside> ul> li> span{
 	display: block;
 	width: 120px;
-	padding-left: 28px;
+	padding-left: 29px;
 	font-size: 13px;
 	color: #114165;
-	line-height: 25px;
-	background: url(../img/wheel.png) 3px 50% no-repeat;
+	line-height: 26px;
+	background: url(../img/wheel.png) 4px 1px no-repeat;
 	border: 1px solid #949fa4;
-	border-radius: 50px;
+	border-radius: 15px;
 
 }
 aside> ul> li{
 	list-style: none;
+
+}
+aside> ul{
+	margin-top:13px;
 }
 aside li li {
 	color: #465961;
 	font-size: 13px;
-	margin-left: 35px;
-	line-height: 24px;
+	margin-left: 33px;
+	line-height: 21px;
+	padding:2px 0;
 	list-style-position: inside;
 
+}
+.left-sidebar span{
+	margin-bottom:1px;
+}
+aside li li:last-child{
+	padding-bottom:1px;
 }
 aside a{
 	text-decoration: none;
@@ -427,6 +500,8 @@ aside a:hover{
 	font-style: italic;
 	font-weight: bold;
 	text-decoration: underline;
+	color: #0c3256;
+
 }
 .product-panel{
 	float: left;
@@ -436,10 +511,11 @@ aside a:hover{
 	padding:15px 0 0 7px;
 	border-radius: 3px;
 }
+
 .product{
 	text-align: center;
 	float: left;
-	margin:0 15px 25px;
+	margin:0 15px 24px;
 	color: #114165;
 }
 .product h3{
@@ -452,11 +528,14 @@ aside a:hover{
 }
 .product figcaption{
 	line-height: 14px;
+	font-family:'lucida_s_u';
 }
 .product p{
+	padding-top:2px;
 	font-size: 16px;
 	font-weight: bold;
 	font-style: italic;
+	line-height:19px
 }
 .product span{
 	font-size: 12px;
@@ -468,21 +547,43 @@ aside a:hover{
 	border-radius: 10px;	
 }
 .goodyear{
-	background: #fff url(../img/goodyear.jpg) 50% 50% no-repeat;
+	background: #fff url(../img/goodyear.jpg) 48% 50% no-repeat;
 }
 .nokian{
-	background: #fff url(../img/nokian.jpg) 50% 50% no-repeat;
+	background: #fff url(../img/nokian.jpg) 48% 49% no-repeat;
 }
 .hankook{
-	background: #fff url(../img/hankook.jpg) 50% 50% no-repeat;
+	background: #fff url(../img/hankook.jpg) 48% 50% no-repeat;
 }
 .right-sidebar{
 	float: right;
-	margin-left: 7px;
+	margin-right: 1px;
+}
+.right-sidebar h1{
+	margin-top:1px;
+	background-size:23px;
+	background-position:2px 0;
 }
 .right-sidebar li{
 	list-style: none;
-	margin-left: 10px;
+	margin-left: 13px;
+}
+.right-sidebar li li{
+	line-height:21px;
+	padding:2px 0;
+}
+.right-sidebar li li:first-child{
+	padding-top:4px;
+}
+.right-sidebar>ul>li:last-child{
+	margin-top:10px;
+
+}
+.right-sidebar span{
+	width:106px;
+	height:27px;
+	border-radius:12px;
+	background-position:5px 1px;
 }
 .right-sidebar li input{
 	margin-right: 14px;
@@ -501,45 +602,79 @@ aside a:hover{
 #choose-bottom{
 	color:#fff;
 	background: linear-gradient(to top, #0d3458, #1e6383); 
-	border-radius: 10px;
-	padding: 5px 12px;
-	margin:20px 25px;
-	font-size: 11px;
+	border-radius: 13px;
+	padding: 5.5px 13px;
+	margin:17px 25px;
+	font-size: 12px;
 	border: 0;
 	cursor:pointer;
+	box-shadow: 4px 4px 4px -4px #5c5c5c
 }
 #choose-bottom:hover{
 	background: linear-gradient(to bottom, #0d3458, #1e6383);
 }
 .brands{
 	clear: both;	
-	text-align: center;
-	vertical-align: middle;	
-	padding: 40px 0 25px 0;
+	margin-left:117px;	
+	
 
 }
-.brands img{
-	display: inline-block;
-	margin-right: 10px;
+.brands a{	
+	display: inline-block;	
+	margin-right: 0px;
+	width: 90px;
+	height: 85px;
 }
+#toyo{
+	background: url(../img/toyo.png) 0px 42px no-repeat;
+
+}
+#bridge{
+	width:100px;
+	background: url(../img/bridge.png) 1px 42px no-repeat;
+}
+#continental{
+	background: url(../img/continental.png) 50% 42px no-repeat;
+}
+#dooper{
+	width:70px;
+	background: url(../img/dooper.png) 5px 41px no-repeat;
+}
+#avon{
+	width:80px;
+	background: url(../img/avon.png) 3px 43px no-repeat;
+}
+#tire{
+	width:70px;
+	background: url(../img/tire.png) 8px 38px no-repeat;
+}
+#pirelli{
+	width:70px;
+	background: url(../img/pirelli.png) 4px 43px no-repeat;
+}
+#dunlop{
+	background: url(../img/dunlop.png) 6px 43px no-repeat;
+}
+
 footer{
-	min-height: 85px;
+	min-height: 92px;
 	background-color: #213a4d;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 9px;
 }
 .footer-menu{
-	margin-bottom: 15px;
+	margin-bottom: 12px;
 }
 .footer-menu a{
 	font-size: 12px;
-	color: #bec6c9;
+	color: #bec6c9;	
 	text-decoration: none;
-	padding: 0 10px;
+	padding: 0 12px;
 	border-left: 1px solid #bec6c9;
 }
 .footer-menu a:first-child{
 	border: 0;
+	
 }
 .footer-menu a:hover{
 	color: #52abcb;
