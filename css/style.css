@@ -17,7 +17,7 @@ body {
 	width: 910px;
 	min-height: 1064px;
 	margin: 0 auto;
-	padding: 17px 45px;
+	padding: 17px 45px 0 45px;
 	box-shadow: 0 3px 5px;
 }
 .clearfix:after{
@@ -42,12 +42,12 @@ body {
 	float:left; 
 
 }
-.phone span{
-	font-size: 18px;
+.phone span{	
 	display:block;
-	color: #5e696d;
 	margin:4px 0 0 26px;
+	color: #5e696d;
 	word-spacing:7px;
+	font-size: 18px;
 }
 .log-in{
 	float: left;
@@ -382,16 +382,20 @@ body {
 .r1-row label{
 	position: absolute;
 	width: 76px;
-	left: 15px;
+	left: 15px;	
 	bottom: 50%;
 	font-size: 10px;
 	color: #000;
-
+}
+.r1-row:nth-child(3) label{
+	top:-10px;
+}
+.r1-row:nth-child(4) label{
+	top:-10px;
 }
 .r1-row span{
 	color: #77858b;
 	font-size: 8px;
-
 }
 
 .r1-row select{	
@@ -614,47 +618,49 @@ aside a:hover{
 	background: linear-gradient(to bottom, #0d3458, #1e6383);
 }
 .brands{
-	clear: both;	
-	margin-left:117px;	
-	
+	clear: both;
+	height:90px;	
+	margin-left:117px;
+	position:relative;
 
 }
-.brands a{	
-	display: inline-block;	
-	margin-right: 0px;
-	width: 90px;
-	height: 85px;
+.brands img{
+	top:30px;
+	position:relative;
+	margin-right:10px;
 }
-#toyo{
-	background: url(../img/toyo.png) 0px 42px no-repeat;
+.brands img:first-child{
+	top:36px;
+}
+.brands img:nth-child(2){
+	top:29px;
+	left:-2px;
+}
+.brands img:nth-child(3){
+	top:36px;
+	left:-3px;
+}
+.brands img:nth-child(4){
+	top:35px;
+	left:-2px;
+}
+.brands img:nth-child(5){
+	top:29px;
+	left:-4px;
+}
+.brands img:nth-child(6){
+	top:38px;
+	left:-5px;
+}
+.brands img:nth-child(7){
+	top:30px;
+	left:-6px;
+}
+.brands img:nth-child(8){
+	top:29px;
+	left:-5px;
+}
 
-}
-#bridge{
-	width:100px;
-	background: url(../img/bridge.png) 1px 42px no-repeat;
-}
-#continental{
-	background: url(../img/continental.png) 50% 42px no-repeat;
-}
-#dooper{
-	width:70px;
-	background: url(../img/dooper.png) 5px 41px no-repeat;
-}
-#avon{
-	width:80px;
-	background: url(../img/avon.png) 3px 43px no-repeat;
-}
-#tire{
-	width:70px;
-	background: url(../img/tire.png) 8px 38px no-repeat;
-}
-#pirelli{
-	width:70px;
-	background: url(../img/pirelli.png) 4px 43px no-repeat;
-}
-#dunlop{
-	background: url(../img/dunlop.png) 6px 43px no-repeat;
-}
 
 footer{
 	min-height: 92px;
